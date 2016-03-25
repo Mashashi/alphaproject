@@ -1,0 +1,1 @@
+1ª - Os suportes não estão todos na mesma tabela porque no antigo software acusava "Circular relation ship"

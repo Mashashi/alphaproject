@@ -1,0 +1,85 @@
+body{
+					
+	background-image: URL('../imagens/backeditutil.jpg');
+	
+	background-repeat: repeat-y;
+	
+	font-family: verdana;
+	
+	font-size: 11px;
+	
+	margin: auto;	
+				
+}
+
+table{
+					
+	margin: auto;
+					
+	border-left: 2px #E98E02 solid;
+					
+	border-right: 2px #E98E02 solid;
+					
+}
+				
+th{
+
+	color: #E98E02;
+					
+}
+				
+tr{
+					
+	font-family: verdana;
+					
+	font-size: 11px;
+					
+	text-align: right;
+					
+					
+}
+				
+*.forms{
+					
+border: 1px solid black; 
+					
+font-family: verdana;
+					
+font-size: 12px;
+					
+
+}
+				
+*.inpfix{
+					
+ width: 200px;
+					
+ height: 16px;
+					
+ font-size: 10px;
+ 
+}
+				
+a:link {
+	
+ text-decoration: none;
+ 
+ color: #0033CC;
+	
+}
+	
+a:visited {
+	
+ text-decoration: none;
+ 
+ color: #0033CC;
+	
+}
+				
+a:active {
+	
+ text-decoration: none;
+ 
+ color: #0033CC;
+	
+}

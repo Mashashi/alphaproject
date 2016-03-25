@@ -1,0 +1,110 @@
+#inserestats{
+	
+	width: 130px;
+	
+}
+
+.arrange{
+	
+  position: absolute;
+  display: block;
+  float: left;
+  clear: both;
+	
+}
+
+#gestaopremainareaprevit{
+	
+	color: #000000;
+	display: block;
+	cursor: pointer;
+	text-align: left;
+	background-image: none;
+	margin-top: 5px;
+	width: 110px;
+	height: auto;
+	background-color: #B8F686;
+	border: 1px #339900 solid;
+	
+}
+
+
+#navtop{
+
+	width: 1003px; 
+	
+}
+
+#copyright{
+
+	width: 992px;
+	
+}
+
+body{
+	
+	width: 1003px;
+	
+}
+
+#total{ 
+
+	width: 1003px;	
+	
+}
+
+
+
+#top{
+	
+	width: 1003px;
+	
+}
+
+#post{
+	
+	cursor: pointer;
+	
+}
+
+.listboxutil{
+	
+	width: 398px;
+	height: 806px;
+	
+}
+
+#editutiloncli{
+	
+	width: 115px;
+	
+}
+
+
+/********************/
+#perfilgeral{ width: 582px; }
+
+.bodyperfilpre{ width: 290px;height:143px; }
+
+*.perfilgehead{ width: 292px;}
+
+*.avatbodywidth{ width: 283px;}
+
+*.avattitwidth{ width: 285px;}
+
+*.pretudo{ height: 315px;}
+
+.perfilfooter{ margin-top:  0px;}
+
+/********************/
+
+
+#contlibri{ margin-left: 572px;}
+
+.heighttags{height: 20px;font-size: 11px;}
+
+.widthtoolbox{width: 504px;}
+
+.filmopconta{ height: auto; }
+
+.pretudo{ height: 324px; }

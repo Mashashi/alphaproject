@@ -1,0 +1,58 @@
+<?php
+/**  
+ * Imprime uma imagem com um texto originado randomicamente.
+ *  
+ * @author Rafael Campos
+ * @package alphaproject_biblioteca 
+ * @copyright Copyright (c) 2008, 2009; 11º, 12º; I1 Eça de Queirós
+ * @version 1.0
+ */
+
+/**
+ * Variáveis de configuração do ficheiro
+ *  
+ */
+$width = 180;
+$height = 50;
+
+/** 
+ * Incluir as funções mais avançadas.
+ */
+include_once("funcoes_mais_avan.php");
+
+// Salve como "img.php"
+// Inicia sessão.
+/*if( !isset($_SESSION['id_user']) )*/
+session_start();
+
+// Também temos uma mensagem de erro nesse header quando a GD não esta instalada.
+header ("Content-type: image/png");
+
+//Área da imagem.
+$area = imagecreatetruecolor($width, $height);
+
+// Cor de fundo.
+$fundo = imagecolorallocate($area, 255, 255, 255);
+
+$cor4 = imagecolorallocatealpha($area, rand(220,249), 
+rand(183,203), rand(117,137), rand(0,60));
+
+/*Daqui em diante temos o GD a trabalhar para mostrar o código alfanumérico e os riscos meio que rasurando o resultado do código. Apesar que a intenção é essa mesmo! Altere os valores e veja o que acontece com as formas e as cores!*/
+
+// Desenha área
+imagefill($area, 0, 0, $fundo);
+
+$_SESSION['gd_code'] = genarateCod(4);
+
+$_SESSION['used_gd_code'] = 0;
+
+// O texto do código.
+imagettftext($area, 20, rand(-6,6), rand(8,15), 
+($height*0.80) ,$cor4,'fonts/perfectdrown.ttf', $_SESSION['gd_code'] );
+
+// Constroi
+imagepng($area);
+
+// Destrói
+imagedestroy($area);
+?>
